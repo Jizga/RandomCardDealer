@@ -34,9 +34,14 @@ i {
   background-color: rgba(42, 110, 165, 0) !important;
   color: #007bff;
   border-color: #007bff;
+  caret-color: rgb(229, 255, 0);
 }
 
 .myInput:focus,
 .myInput:not(:focus) {
   color: #007bff;
+}
+
+::placeholder {
+  color: #007bff63 !important;
 }
