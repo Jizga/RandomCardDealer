@@ -45,7 +45,15 @@ function redSwitcher() {
   return "";
 }
 
+//Botón que hace cambiar de carta
 document.querySelector("button").addEventListener("click", () => {
   iconTopLefth.innerHTML = iconBottomRigth.innerHTML = randomIcon(cardsIcons);
   cardValueHtml.innerHTML = randomCardValue(cardValue);
 });
+
+//Timer que cambia de carta automaticamente cada 10 segundos
+
+setInterval(function() {
+  iconTopLefth.innerHTML = iconBottomRigth.innerHTML = randomIcon(cardsIcons);
+  cardValueHtml.innerHTML = randomCardValue(cardValue);
+}, 10000);
