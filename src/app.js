@@ -15,6 +15,9 @@ const cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "K", "Q", "J", "A"];
 const iconTopLefth = document.querySelector(".iconTopLefth");
 const iconBottomRigth = document.querySelector(".iconBottomRigth");
 const cardValueHtml = document.querySelector(".cardValue");
+const cardWidth = document.querySelector("#cardWidth");
+const cardHeight = document.querySelector("#cardHeight");
+const myCard = document.querySelector(".myCard");
 
 window.onload = function() {
   generateARandomCard();
@@ -58,3 +61,13 @@ document.querySelector("button").addEventListener("click", () => {
 setInterval(function() {
   generateARandomCard();
 }, 10000);
+
+//Cambiar el tamaño de la carta
+
+cardWidth.addEventListener("input", () => {
+  myCard.style.width = `${cardWidth.value}px`;
+});
+
+cardHeight.addEventListener("input", () => {
+  myCard.style.height = `${cardHeight.value}px`;
+});

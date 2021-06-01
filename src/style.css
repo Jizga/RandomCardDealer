@@ -29,3 +29,14 @@ body {
 i {
   font-size: 70px;
 }
+
+.myInput {
+  background-color: rgba(42, 110, 165, 0) !important;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.myInput:focus,
+.myInput:not(:focus) {
+  color: #007bff;
+}
