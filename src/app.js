@@ -17,10 +17,14 @@ const iconBottomRigth = document.querySelector(".iconBottomRigth");
 const cardValueHtml = document.querySelector(".cardValue");
 
 window.onload = function() {
+  generateARandomCard();
+};
+
+function generateARandomCard() {
   //*** repetir el mismo icono */
   iconTopLefth.innerHTML = iconBottomRigth.innerHTML = randomIcon(cardsIcons);
   cardValueHtml.innerHTML = randomCardValue(cardValue);
-};
+}
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
@@ -47,13 +51,11 @@ function redSwitcher() {
 
 //Botón que hace cambiar de carta
 document.querySelector("button").addEventListener("click", () => {
-  iconTopLefth.innerHTML = iconBottomRigth.innerHTML = randomIcon(cardsIcons);
-  cardValueHtml.innerHTML = randomCardValue(cardValue);
+  generateARandomCard();
 });
 
 //Timer que cambia de carta automaticamente cada 10 segundos
 
 setInterval(function() {
-  iconTopLefth.innerHTML = iconBottomRigth.innerHTML = randomIcon(cardsIcons);
-  cardValueHtml.innerHTML = randomCardValue(cardValue);
+  generateARandomCard();
 }, 10000);
