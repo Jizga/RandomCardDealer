@@ -28,18 +28,17 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-const randomIcon = arr => {
+function randomIcon(arr) {
   let randomNumber = getRandomIntInclusive(0, arr.length - 1);
   return arr[randomNumber];
-};
+}
 
-const randomCardValue = arr => {
+function randomCardValue(arr) {
   let randomNumber = getRandomIntInclusive(0, arr.length - 1);
   return arr[randomNumber];
-};
+}
 
-//Cambiar de color de los iconos
-//En arrow function no funciona llamarla primero y declararla después
+//Cambiar el color de los iconos
 function redSwitcher() {
   const num = getRandomIntInclusive(1, 100);
   if (num < 50) return "text-danger";
