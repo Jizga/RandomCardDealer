@@ -55,7 +55,6 @@ document.querySelector("button").addEventListener("click", () => {
 });
 
 //Timer que cambia de carta automaticamente cada 10 segundos
-
 setInterval(function() {
   generateARandomCard();
 }, 10000);
