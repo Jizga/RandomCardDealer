@@ -4,6 +4,7 @@
 body {
   line-height: 0;
   font-family: "Libre Baskerville", serif;
+  background-color: rgba(1, 36, 1, 0.952);
 }
 
 .myCard {

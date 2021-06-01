@@ -44,3 +44,8 @@ function redSwitcher() {
   if (num < 50) return "text-danger";
   return "";
 }
+
+document.querySelector("button").addEventListener("click", () => {
+  iconTopLefth.innerHTML = iconBottomRigth.innerHTML = randomIcon(cardsIcons);
+  cardValueHtml.innerHTML = randomCardValue(cardValue);
+});
