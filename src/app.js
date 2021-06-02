@@ -3,11 +3,18 @@ import "bootstrap";
 import "./style.css";
 import "./assets/img/4geeks.ico";
 
+// const cardsIcons = [
+//   `<i class="bi bi-suit-spade-fill ${redSwitcher()}"></i>`,
+//   `<i class="bi bi-suit-club-fill ${redSwitcher()}"></i>`,
+//   `<i class="bi bi-suit-diamond-fill ${redSwitcher()}"></i>`,
+//   `<i class="bi bi-suit-heart-fill ${redSwitcher()}"></i>`
+// ];
+
 const cardsIcons = [
-  `<i class="bi bi-suit-spade-fill ${redSwitcher()}"></i>`,
-  `<i class="bi bi-suit-club-fill ${redSwitcher()}"></i>`,
-  `<i class="bi bi-suit-diamond-fill ${redSwitcher()}"></i>`,
-  `<i class="bi bi-suit-heart-fill ${redSwitcher()}"></i>`
+  `<i class="bi bi-suit-spade-fill"></i>`,
+  `<i class="bi bi-suit-club-fill"></i>`,
+  `<i class="bi bi-suit-diamond-fill text-danger"></i>`,
+  `<i class="bi bi-suit-heart-fill text-danger"></i>`
 ];
 
 const cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "K", "Q", "J", "A"];
@@ -46,11 +53,11 @@ function randomCardValue(arr) {
 }
 
 //Cambiar el color de los iconos
-function redSwitcher() {
-  const num = getRandomIntInclusive(1, 100);
-  if (num < 50) return "text-danger";
-  return "";
-}
+// function redSwitcher() {
+//   const num = getRandomIntInclusive(1, 100);
+//   if (num < 50) return "text-danger";
+//   return "";
+// }
 
 //Botón que hace cambiar de carta
 document.querySelector("button").addEventListener("click", () => {
