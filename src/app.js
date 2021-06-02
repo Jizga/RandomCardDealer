@@ -65,17 +65,13 @@ setInterval(function() {
 //Cambiar el tamaño de la carta
 
 cardWidth.addEventListener("input", () => {
-  if (cardWidth.value !== "") {
-    myCard.style.width = `${cardWidth.value}px`;
-  } else {
-    myCard.style.width = "300px";
-  }
+  cardWidth.value !== ""
+    ? (myCard.style.width = `${cardWidth.value}px`)
+    : (myCard.style.width = "300px");
 });
 
 cardHeight.addEventListener("input", () => {
-  if (cardHeight.value !== "") {
-    myCard.style.height = `${cardHeight.value}px`;
-  } else {
-    myCard.style.height = "400px";
-  }
+  cardHeight.value !== ""
+    ? (myCard.style.height = `${cardHeight.value}px`)
+    : (myCard.style.height = "400px");
 });
