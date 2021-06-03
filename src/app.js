@@ -74,7 +74,7 @@ setInterval(function() {
 cardWidth.addEventListener("input", () => {
   cardWidth.value !== ""
     ? (myCard.style.width = `${cardWidth.value}px`)
-    : (myCard.style.width = "300px");
+    : (myCard.style.width = "100%");
 });
 
 cardHeight.addEventListener("input", () => {
